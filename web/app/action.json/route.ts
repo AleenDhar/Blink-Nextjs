@@ -5,14 +5,14 @@ export const GET = async () => {
     rules: [
       // map all root level routes to an action
       {
-        pathPattern: "/*",
-        apiPath: "/api/*",
+        pathPattern: "/blink",
+        apiPath: "https://www.gitblocks.co/api/donate-sol",
       },
       // idempotent rule as the fallback
-      {
-        pathPattern: "/api/**",
-        apiPath: "/api/**",
-      },
+    //   {
+    //     pathPattern: "/api/**",
+    //     apiPath: "/api/**",
+    //   },
     ],
   };
 
@@ -22,5 +22,5 @@ export const GET = async () => {
 };
 
 // DO NOT FORGET TO INCLUDE THE `OPTIONS` HTTP METHOD
-// THIS WILL ENSURE CORS WORKS FOR BLINKS
+// THIS WILL ENSURE CORS WORKS FOR BLINK
 export const OPTIONS = GET;
