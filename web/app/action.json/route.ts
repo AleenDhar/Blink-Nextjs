@@ -6,7 +6,7 @@ export const GET = async () => {
       // map all root level routes to an action
       {
         pathPattern: "/blink",
-        apiPath: "https://www.gitblocks.co/api/donate-sol",
+        apiPath: "/api/donate-sol",
       },
       // idempotent rule as the fallback
     //   {
